@@ -4,7 +4,7 @@
 
 if (Meteor.isClient) {
   Meteor.startup(function () {
-     $( "#mapCanvas" ).width(calcMapWidth()).height($(window).height()).gmap3();
+     $( "#mapCanvas" ).width('100%').height(350).gmap3();
 
 
      $( '#mapCanvas' ).show().gmap3().css('border-color', 'grey');
