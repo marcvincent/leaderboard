@@ -1,0 +1,12 @@
+
+<template name="testGmaps">
+
+
+
+     <h1>The Map</h1>
+     <div id="mapCanvas"></div>
+
+     <script type="text/javascript" src="/client/gmap3.js"></script>
+
+
+</template>

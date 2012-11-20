@@ -1,0 +1,14 @@
+if (Meteor.isClient) {
+
+
+
+
+     $( "#mapCanvas" ).width("95%").height($(window).height()-300).gmap3();
+
+     $( "#mapCanvas" ).position({
+         my: "left top",
+         at: "left bottom",
+         of: "#leaderboard"
+     });
+
+     $( '#mapCanvas' ).show().gmap3().css('border', '1px solid #000000');

@@ -1,0 +1,20 @@
+
+
+
+
+if (Meteor.isClient) {
+  Meteor.startup(function () {
+     $( "#mapCanvas" ).width(calcMapWidth()).height($(window).height()).gmap3();
+
+
+     $( '#mapCanvas' ).show().gmap3().css('border-color', 'grey');
+
+     function calcMapWidth() {
+	     var width = $(window).width()-$( '#leftBar' ).width();
+          if (width > 500)
+               width = 500;
+
+	     return width;
+     }
+  });
+}
